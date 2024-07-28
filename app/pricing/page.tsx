@@ -1,24 +1,20 @@
-import PricingPlan from "@/components/PricingPlan";
+import CheckOutPage from "@/components/CheckOutPage";
+import FAQ from "@/components/FAQ";
+import PricingCard from "@/components/PricingCard";
+import PricingPlans from "@/components/PricingPlans";
+import Reviews from "@/components/Review";
+import StripePayment from "@/components/StripePayment";
 import React from "react";
 
 const Pricing = () => {
+  const amount = 49.99;
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
-        <div className="text-center">
-          <p className="text-lg font-semibold text-gray-500">
-            Ready to start tracking your expenses?
-          </p>
-          <h1 className="mt-2 text-4xl font-bold text-gray-800">
-            Our Pricing Plans
-          </h1>
-          <p className="mt-2 text-lg text-gray-500">
-            Building great customer relationships is just a step away
-          </p>
-        </div>
-      </div>
-
-      <PricingPlan />
+      <PricingPlans />
+      <PricingCard />
+      {/* <Reviews /> */}
+      <FAQ />
+      <StripePayment />
     </>
   );
 };
