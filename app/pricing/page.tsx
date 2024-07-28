@@ -1,4 +1,4 @@
-import FAQ from '@/components/FAQ'
+import FaqDropdown from '@/components/FaqDropdown'
 import PricingCard from '@/components/PricingCard'
 import PricingPlans from '@/components/PricingPlans'
 import Reviews from '@/components/Review'
@@ -9,8 +9,9 @@ const Pricing = () => {
     <>
     <PricingPlans />
     <PricingCard />
-    {/* <Reviews /> */}
-    <FAQ />
+    <Reviews />
+    {/* <FAQ /> */}
+    <FaqDropdown />
     </>
   )
 }

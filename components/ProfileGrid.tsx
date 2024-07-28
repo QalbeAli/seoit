@@ -1,4 +1,4 @@
-import Image from "next/image";
+import React from "react";
 
 interface TeamMember {
   name: string;
@@ -48,20 +48,21 @@ const teamMembers: TeamMember[] = [
 
 const TeamGrid: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 max-w-5xl  ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 space-x-4">
-        {teamMembers.map((member) => (
-          <div className="border border-white border-4xl shadow-lg p-2">
-              <img
-                src={member.imageUrl}
-                alt={member.imageUrl}
-                className="rounded-xl bg-[#E2E8F0]"
-              />
-            <div className="flex flex-col justify-center items-center text-center py-4">
-              <div className="font-bold p-1">John Doe</div>
-              <div className="text-[#718096] p-1">CEO Of</div>
-              <div className="text-[#718096] p-1">CoolCompany</div>
-              <div className="text-[#718096]">Joined April, 2018</div>
+    <div className="container mx-auto px-4 max-w-5xl py-10">
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="bg-white border rounded-lg shadow-md p-4">
+            <img
+              src={member.imageUrl}
+              alt={member.name}
+              className="rounded-xl bg-gray-200 w-full object-cover mb-4"
+            />
+            <div className="text-center">
+              <div className="font-bold text-lg mb-1">{member.name}</div>
+              <div className="text-gray-600">{member.role}</div>
+              <div className="text-gray-600">{member.company}</div>
+              <div className="text-gray-600 mt-2">{member.joinDate}</div>
             </div>
           </div>
         ))}
