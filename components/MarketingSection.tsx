@@ -6,9 +6,9 @@ const MarketingSection = () => {
   return (
     <div className="bg-white py-8">
       <div className="container mx-auto flex justify-around items-center flex-wrap">
-        <div className="w-full lg:w-1/3 p-4 text-right">
+        <div className="w-full lg:w-1/3 p-4 text-center md:text-right">
           <div className="space-y-6">
-            <div className='space-y-4'>
+            <div className='space-y-4 '>
               <h3 className="font-bold text-xl">Targeted SEO</h3>
               <p>As an Internet marketing strategy, SEO <br /> considers tempor incididunt ut labore et.</p>
             </div>
@@ -27,7 +27,7 @@ const MarketingSection = () => {
             <Image src="/market.webp" alt="Shopping Online" layout="fill" objectFit="cover" className="rounded-lg shadow-lg" />
           </div>
         </div>
-        <div className="w-full lg:w-1/3 p-4">
+        <div className="w-full lg:w-1/3 p-4 text-center md:text-left">
           <div className="space-y-6">
             <div className='space-y-4'>
               <h3 className="font-bold text-xl">Market Analysis</h3>
