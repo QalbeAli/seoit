@@ -48,7 +48,7 @@ const cardData = [
 
 export default function CardGrid() {
   return (
-    <div className="pt-12 mb-20">
+    <div className="pt-12 mb-20 mx-4">
     <div className="max-w-5xl mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {cardData.map((card, index) => (

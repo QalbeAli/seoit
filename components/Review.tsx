@@ -1,24 +1,24 @@
 "use client"
 import React, { useState } from 'react';
 import CustomerReview from './CustomerReview';
-
+import { FaDotCircle } from "react-icons/fa";
 const reviews = [
   {
-    imageSrc: 'https://via.placeholder.com/150',
+    imageSrc: 'john.webp',
     review: 'Excellent customer service, You guys are the best!',
     name: 'John Doe',
     title: 'Marketing Manager',
     companyLogo: 'https://via.placeholder.com/50'
   },
   {
-    imageSrc: 'https://via.placeholder.com/150',
+    imageSrc: 'john.webp',
     review: 'Great experience, will recommend to others!',
     name: 'Jane Smith',
     title: 'Product Manager',
     companyLogo: 'https://via.placeholder.com/50'
   },
   {
-    imageSrc: 'https://via.placeholder.com/150',
+    imageSrc: 'john.webp',
     review: 'Top-notch service and support!',
     name: 'Bob Johnson',
     title: 'Sales Director',
@@ -42,22 +42,19 @@ const Reviews: React.FC = () => {
       <CustomerReview {...reviews[currentIndex]} />
       <div className="flex space-x-2 mt-4">
         <button
-          className={`w-3 h-3 rounded-full ${currentIndex === 0 ? 'bg-blue-500' : 'bg-gray-300'}`}
+          className={` ${currentIndex === 0 ? 'text-blue-500' : 'text-gray-300'}`}
           onClick={() => setCurrentIndex(0)}
-        />
-        <button
-          className={`w-3 h-3 rounded-full ${currentIndex === 1 ? 'bg-blue-500' : 'bg-gray-300'}`}
+        ><FaDotCircle/></button>
+         <button
+          className={` ${currentIndex === 1 ? 'text-blue-500' : 'text-gray-300'}`}
           onClick={() => setCurrentIndex(1)}
-        />
-        <button
-          className={`w-3 h-3 rounded-full ${currentIndex === 2 ? 'bg-blue-500' : 'bg-gray-300'}`}
+        ><FaDotCircle/></button>
+       <button
+          className={` ${currentIndex === 2 ? 'text-blue-500' : 'text-gray-300'}`}
           onClick={() => setCurrentIndex(2)}
-        />
+        ><FaDotCircle/></button>
       </div>
-      <div className="flex space-x-4 mt-4">
-        <button onClick={prevReview} className="px-4 py-2 bg-gray-300 rounded">Previous</button>
-        <button onClick={nextReview} className="px-4 py-2 bg-gray-300 rounded">Next</button>
-      </div>
+    
     </div>
   );
 };

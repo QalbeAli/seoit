@@ -8,8 +8,8 @@ const Team = () => {
           <div className="font-bold text-blue-500 text-xl my-8">
             Meet Our Talented Team
           </div>
-          <div className="font-bold text-3xl text-[#2D3748]">
-            We Design Together with Our <br /> Clients
+          <div className="font-bold text-center text-3xl text-[#2D3748]">
+            We Design Together with Our Clients
           </div>
           <div className="text-[#718096] py-6">
           Consectetur sed do eiusmod tempor incididunt adipisicing eiusmod.
