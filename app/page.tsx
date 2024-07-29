@@ -1,7 +1,7 @@
+"use client"
 import AcquisitionComponent from "@/components/AcquisitionComponent";
 import Brand from "@/components/Brand";
 import CallToAction from "@/components/CallToAction";
-import CheckoutNothing from "@/components/CheckoutNothing";
 import CompanyLogos from "@/components/CompanyLogos";
 import Competition from "@/components/Competition";
 import InTouch from "@/components/InTouch";
@@ -11,7 +11,6 @@ import MarketingSection from "@/components/MarketingSection";
 import MarketingService from "@/components/MarketingService";
 import PerformanceStats from "@/components/PerformaceStats";
 import Testimonials from "@/components/Testimonials";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -29,7 +28,6 @@ export default function Home() {
       <CallToAction />
       <Testimonials />
       <InTouch />
-      
     </div>
     </>
   );
