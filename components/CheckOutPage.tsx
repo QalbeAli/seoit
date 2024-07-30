@@ -44,11 +44,16 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       return;
     }
 
+    const returnUrl =
+      process.env.NEXT_PUBLIC_SUCCESS_URL_PRODUCTION ||
+      process.env.NEXT_PUBLIC_SUCCESS_URL_DEVELOPMENT ||
+      "http://localhost:3000/success"; // Fallback value
+
     const { error } = await stripe.confirmPayment({
       elements,
       clientSecret,
       confirmParams: {
-        return_url: `http://www.localhost:3000/success`,
+        return_url: returnUrl,
       },
     });
 
