@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface TeamMember {
   name: string;
@@ -49,15 +50,18 @@ const teamMembers: TeamMember[] = [
 const TeamGrid: React.FC = () => {
   return (
     <div className="container mx-auto px-4 max-w-5xl py-10">
-      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-white border rounded-lg shadow-md p-4">
-            <img
-              src={member.imageUrl}
-              alt={member.name}
-              className="rounded-xl bg-gray-200 w-full object-cover mb-4"
-            />
+            <div className="relative w-full h-48 mb-4">
+              <Image
+                src={member.imageUrl}
+                alt={member.name}
+                layout="fill" // Ensures image covers the container
+                objectFit="cover" // Maintain aspect ratio while covering the container
+                className="rounded-xl bg-gray-200"
+              />
+            </div>
             <div className="text-center">
               <div className="font-bold text-lg mb-1">{member.name}</div>
               <div className="text-gray-600">{member.role}</div>

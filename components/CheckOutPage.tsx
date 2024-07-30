@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import {
   useStripe,
@@ -16,6 +15,8 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    if (amount <= 0) return; // Avoid API call for invalid amounts
+
     fetch("/api/stipe-payment-intern", {
       method: "POST",
       headers: {
@@ -47,17 +48,12 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       elements,
       clientSecret,
       confirmParams: {
-        return_url: `http://www.localhost:3000/payment-success?amount=${amount}`,
+        return_url: `http://www.localhost:3000/success`,
       },
     });
 
     if (error) {
-      // This point is only reached if there's an immediate error when
-      // confirming the payment. Show the error to your customer (for example, payment details incomplete)
       setErrorMessage(error.message);
-    } else {
-      // The payment UI automatically closes with a success animation.
-      // Your customer is redirected to your `return_url`.
     }
 
     setLoading(false);

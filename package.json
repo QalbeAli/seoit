@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
-    "@heroicons/react": "^2.1.5",
+    "@heroicons/react": "v1",
     "@next/font": "^14.2.5",
     "@stripe/react-stripe-js": "^2.7.3",
     "@stripe/stripe-js": "^4.1.0",

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface TeamMember {
   name: string;
@@ -44,39 +45,40 @@ const Testimonials: React.FC = () => {
     <div className="flex justify-center items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
         {teamMembers.map((member, index) => (
-          <>
-            <div
-              key={index}
-              className="flex flex-col md:flex-row bg-white rounded-lg max-w-xl"
-            >
-              <div className="flex justify-center items-center p-6 shadow-xl ">
-                <div className="text-center">
-                  <div className="text-lg font-semibold">{member.name}</div>
-                  <div className="text-gray-500">
-                    {member.role} <br /> {member.company}
-                  </div>
-                  <div className="text-gray-400 mt-2">{member.joinDate}</div>
+          <div
+            key={index}
+            className="flex flex-col md:flex-row bg-white rounded-lg max-w-xl"
+          >
+            <div className="flex justify-center items-center p-6 shadow-xl ">
+              <div className="text-center">
+                <div className="text-lg font-semibold">{member.name}</div>
+                <div className="text-gray-500">
+                  {member.role} <br /> {member.company}
                 </div>
+                <div className="text-gray-400 mt-2">{member.joinDate}</div>
               </div>
-              <div className="w-full md:w-1/3">
-                <img  
-                  src={member.imageUrl}
-                  alt={member.name}
-                  className="rounded-xl bg-gray-200 w-full h-60 object-cover"
-                />
-              </div>
-              <div className="flex justify-center items-center mx-auto p-6">
-                <div className="">
-                  <div>
-                    Sed commodo, est quis <br /> maximus fermentum, massa <br />
-                    ipsum euismod neque, in <br /> varius risus tellus quis
-                    lacus.
-                    <br /> Sed ac bibendum odio.
-                  </div>
+            </div>
+            <div className="w-full md:w-1/3">
+              <Image  
+                src={member.imageUrl}
+                alt={member.name}
+                className="rounded-xl bg-gray-200"
+                width={300} // Adjust width as needed
+                height={300} // Adjust height as needed
+                layout="responsive" // Maintains aspect ratio
+              />
+            </div>
+            <div className="flex justify-center items-center mx-auto p-6">
+              <div className="">
+                <div>
+                  Sed commodo, est quis <br /> maximus fermentum, massa <br />
+                  ipsum euismod neque, in <br /> varius risus tellus quis
+                  lacus.
+                  <br /> Sed ac bibendum odio.
                 </div>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>

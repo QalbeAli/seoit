@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image"; // Import the Image component
 import ConsultationModal from "./ConsultationModal";
 
 const Navbar = () => {
@@ -24,10 +25,12 @@ const Navbar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
+            <Image
               src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
               alt="SEOIT Logo"
+              className="h-8"
+              width={32} // Adjust the width as needed
+              height={32} // Adjust the height as needed
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               SEOIT
@@ -116,7 +119,7 @@ const Navbar = () => {
               <li>
                 <div className="">
                   <button
-                    className="text-white bg-orange-500 px-4  rounded-xl hover:scale-110"
+                    className="text-white bg-orange-500 px-4 rounded-xl hover:scale-110"
                     onClick={() => setIsModalOpen(true)}
                   >
                     Contact Us
@@ -136,6 +139,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-<button className="bg-blue-500 text-white py-2 px-4 rounded-lg">
-  Open Consultation Modal
-</button>;

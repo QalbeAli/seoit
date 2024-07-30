@@ -1,30 +1,35 @@
 "use client";
 import React, { useEffect, useState } from "react";
-
 import StripePayment from "@/components/StripePayment";
-import { useRouter, useSearchParams } from "next/navigation";
-function page() {
-  // const router = useRouter();
-  const [plan, setPlan] = useState("");
-  const [price, setPrice] = useState<number | 0>(0);
-  const queryParams = useSearchParams();
-  useEffect(() => {
-    // const queryParams = new URLSearchParams(router.asPath.split("?")[1]);
+import { useSearchParams } from "next/navigation";
+import SuspenseBoundary from "@/components/SuspenseBoundary";
 
+function CheckOut() {
+  return (
+    <SuspenseBoundary>
+      <CheckOutContent />
+    </SuspenseBoundary>
+  );
+}
+
+function CheckOutContent() {
+  const [plan, setPlan] = useState<string>("");
+  const [price, setPrice] = useState<number>(0);
+  const queryParams = useSearchParams();
+
+  useEffect(() => {
     const plan = queryParams.get("plan");
     const price = queryParams.get("price");
 
     if (plan) setPlan(plan);
-    if (price) setPrice(Number(price));
+    if (price) {
+      const numericPrice = Number(price);
+      if (numericPrice > 0) setPrice(numericPrice);
+      else setPrice(0); // Or handle invalid price as needed
+    }
   }, [queryParams]);
 
-  return (
-    <div>
-      {plan}
-      {price}
-      <StripePayment plan={plan} price={price} />
-    </div>
-  );
+  return <div>{price > 0 && <StripePayment plan={plan} price={price} />}</div>;
 }
 
-export default page;
+export default CheckOut;
