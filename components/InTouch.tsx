@@ -12,7 +12,7 @@ const InTouch = () => {
         <p className="text-gray-600 mb-8">
           Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!
         </p>
-        <button className="bg-orange-100 text-orange-600 font-medium px-6 py-3 rounded-full hover:bg-orange-200">
+        <button className="bg-[#C3FF00] text-black font-medium px-6 py-3 rounded-full hover:bg-orange-200">
           Get Started
         </button>
       </div>

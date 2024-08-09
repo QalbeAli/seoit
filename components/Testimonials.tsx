@@ -1,85 +1,48 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
-interface TeamMember {
-  name: string;
-  role: string;
-  company: string;
-  joinDate: string;
-  imageUrl: string;
-}
-
-const teamMembers: TeamMember[] = [
-  {
-    name: "John Doe",
-    role: "CEO of",
-    company: "CoolCompany",
-    joinDate: "Joined April, 2018",
-    imageUrl: "/john.webp",
-  },
-  {
-    name: "Jane Smith",
-    role: "Developer at",
-    company: "AwesomeCo",
-    joinDate: "Joined March, 2019",
-    imageUrl: "/john.webp",
-  },
-  {
-    name: "Sarah Doe",
-    role: "Social Media",
-    company: "Manager",
-    joinDate: "Joined May, 2020",
-    imageUrl: "/john.webp",
-  },
-  {
-    name: "Steve Grant",
-    role: "Freelancer",
-    company: "Developer",
-    joinDate: "Joined June, 2020",
-    imageUrl: "/john.webp",
-  },
-];
-
-const Testimonials: React.FC = () => {
+const Testimonials = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
-        {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="flex flex-col md:flex-row bg-white rounded-lg max-w-xl"
-          >
-            <div className="flex justify-center items-center p-6 shadow-xl ">
-              <div className="text-center">
-                <div className="text-lg font-semibold">{member.name}</div>
-                <div className="text-gray-500">
-                  {member.role} <br /> {member.company}
-                </div>
-                <div className="text-gray-400 mt-2">{member.joinDate}</div>
-              </div>
+    <div className="bg-gray-100 p-8">
+      <div className="container mx-auto max-w-5xl">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold">OUR CLIENT SAY</h1>
+          <p className="text-gray-600 mt-2">
+            Creative Fuels Design Fuels Creativity, Be Here For More, Are You In Love with A Creative?
+          </p>
+        </div>
+     
+        <div className="mt-8 flex flex-col md:flex-row items-center md:space-x-8">
+          <div className="w-full md:w-1/3">
+            <Image 
+              src="/client.png" 
+              alt="Stephen Fanous" 
+              width={500} 
+              height={500} 
+              className="rounded-lg"
+            />
+          </div>
+          <div className="w-full md:w-2/3 mt-8 md:mt-0">
+            <div className="flex items-center">
+              <div className="text-6xl text-gray-400 mr-4">“</div>
+              <p className="text-gray-800 text-xl">
+                This Is Probably The Most Underrated Website & SEO Agency In The World. The Quality Of My New Website&apos;s Design & Functionality Are Incredible!
+              </p>
             </div>
-            <div className="w-full md:w-1/3">
-              <Image  
-                src={member.imageUrl}
-                alt={member.name}
-                className="rounded-xl bg-gray-200"
-                width={300} // Adjust width as needed
-                height={300} // Adjust height as needed
-                layout="responsive" // Maintains aspect ratio
-              />
-            </div>
-            <div className="flex justify-center items-center mx-auto p-6">
-              <div className="">
-                <div>
-                  Sed commodo, est quis <br /> maximus fermentum, massa <br />
-                  ipsum euismod neque, in <br /> varius risus tellus quis
-                  lacus.
-                  <br /> Sed ac bibendum odio.
-                </div>
-              </div>
+            <div className="mt-4 text-center md:text-left">
+              <h3 className="text-xl font-bold">STEPHEN FANOUS</h3>
+              <p className="text-gray-600">CEO Of Marketplace Fresh</p>
             </div>
           </div>
-        ))}
+        </div>
+        <div className="mt-8 flex justify-center space-x-4">
+          <button className="px-4 py-2 bg-white border border-black rounded">
+            <span>⬅️</span>
+          </button>
+          <button className="px-4 py-2 bg-white border border-black rounded">
+            <span>➡️</span>
+          </button>
+        </div>
       </div>
     </div>
   );

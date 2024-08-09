@@ -16,8 +16,13 @@ const config: Config = {
         height: {
           'hcal': 'calc(100vh - 100px)',
         },
+        filter: {
+          'invert': 'invert(1) brightness(0) saturate(100%)',
+        },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };
 export default config;

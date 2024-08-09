@@ -4,19 +4,24 @@ import Brand from "@/components/Brand";
 import CallToAction from "@/components/CallToAction";
 import CompanyLogos from "@/components/CompanyLogos";
 import Competition from "@/components/Competition";
+import MainHero from "@/components/MainHero";
+import Hero from "@/components/Hero";
 import InTouch from "@/components/InTouch";
 import LeadGeneration from "@/components/LeadGeneration";
 import Marketing from "@/components/Marketing";
 import MarketingSection from "@/components/MarketingSection";
 import MarketingService from "@/components/MarketingService";
 import PerformanceStats from "@/components/PerformaceStats";
+import OurProjects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
     <>
     <div className="bg-white">
-      <AcquisitionComponent />
+      {/* <AcquisitionComponent /> */}
+      {/* <Hero /> */}
+      <MainHero />
       <CompanyLogos />
       <Brand />
       <MarketingSection />
@@ -26,8 +31,9 @@ export default function Home() {
       <PerformanceStats />
       <Marketing />
       <CallToAction />
-      <Testimonials />
+      <OurProjects />
       <InTouch />
+      <Testimonials />
     </div>
     </>
   );

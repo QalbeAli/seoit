@@ -6,14 +6,10 @@ const MarketingService = () => {
     <div className="p-8 bg-white flex items-center justify-center">
       <div className="max-w-6xl flex justify-center items-center flex-col lg:flex-row">
         <div className=" w-full lg:w-2/5  p-8 ">
-          <Image
-            src="/marketing.webp" // Ensure this path is correct
-            alt="Marketing Service"
-            height={10}
-            width={600}
-            layout="responsive"
-            objectFit="cover"
-            className="rounded-xl"
+        <video
+            src="/video2.mp4" // Ensure this path is correct
+            controls
+            className="rounded-xl w-full h-auto object-cover"
           />
         </div>
         <div className="w-full lg:w-1/2 mt-8 space-y-5 lg:mt-0">

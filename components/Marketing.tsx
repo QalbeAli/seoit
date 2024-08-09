@@ -5,22 +5,22 @@ import { FaEnvelope, FaFacebookF, FaGoogle, FaMobileAlt } from 'react-icons/fa';
 const Marketing = () => {
   const services = [
     {
-      icon: <FaEnvelope className="text-orange-500 text-3xl" />,
+      icon: <FaEnvelope className="text-black-500 text-3xl" />,
       title: 'Email Marketing',
       description: 'Understand First. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.',
     },
     {
-      icon: <FaFacebookF className="text-orange-500 text-3xl" />,
+      icon: <FaFacebookF className="text-black-500 text-3xl" />,
       title: 'Facebook Marketing',
       description: 'Understand First. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.',
     },
     {
-      icon: <FaGoogle className="text-orange-500 text-3xl" />,
+      icon: <FaGoogle className="text-black-500 text-3xl" />,
       title: 'Google Adwords',
       description: 'Understand First. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.',
     },
     {
-      icon: <FaMobileAlt className="text-orange-500 text-3xl" />,
+      icon: <FaMobileAlt className="text-black-500 text-3xl" />,
       title: 'In-App Marketing',
       description: 'Understand First. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.',
     },
@@ -32,7 +32,7 @@ const Marketing = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {services.map((service, index) => (
             <div key={index} className=" p-2 rounded-lg  flex flex-col items-center">
-              <div className="mb-4 p-4 rounded-full bg-orange-100">
+              <div className="mb-4 p-4 rounded-full bg-[#C3FF00]">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-[#718096]">{service.title}</h3>

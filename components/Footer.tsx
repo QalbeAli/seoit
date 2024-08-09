@@ -10,11 +10,12 @@ const Footer = () => {
             <div className="mb-6 md:mb-0">
               <a href="https://flowbite.com/" className="flex items-center">
                 <Image
-                  src="https://flowbite.com/docs/images/logo.svg"
-                  className="h-8 me-3"
-                  alt="FlowBite Logo"
-                  width={32} // Adjust the width as needed
-                  height={32} // Adjust the height as needed
+                  src="/logo.png"
+                  className="h-16 me-6 filter invert "
+                  alt="SEOIT Logo"
+                  width={64} // Adjust the width as needed
+                  height={64} // Adjust the height as needed
+                  
                 />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                   SEOIT
