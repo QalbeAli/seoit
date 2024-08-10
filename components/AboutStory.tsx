@@ -5,13 +5,13 @@ const AboutStory = () => {
   return (
     <>
       <div className="flex justify-center items-center flex-col">
-        <div className="font-bold text-blue-500 text-xl my-8">
+        <div className="font-bold text-lightDark text-xl my-8">
           Established in 2017
         </div>
-        <div className="text-4xl font-bold text-[#2D3748]">
+        <div className="text-4xl font-bold text-sil">
           Discover Our Story
         </div>
-        <div className="font-normal text-center text-xl my-8 text-[#718096]">
+        <div className="font-normal text-center text-xl my-8 text-lightDark">
           Credibly brand standards compliant users without extensible services
         </div>
         <div className="mx-4">

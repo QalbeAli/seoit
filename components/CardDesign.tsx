@@ -11,10 +11,10 @@ const CardDesign = ({ icon:Icon, title, description }: CardProps) => {
     <>
       <div className="bg-white p-6 rounded-lg shadow-xl text-center ">
         <div className="mb-4">
-        <Icon className="w-12 h-12 mx-auto text-[#EDF2F7]" />
+        <Icon className="w-12 h-12 mx-auto text-greenTouch" />
         </div>
-        <h3 className="text-xl font-bold text-blue-400">{title}</h3>
-        <p className="text-gray-600 mt-2 font-normal">{description}</p>
+        <h3 className="text-xl font-bold text-dark">{title}</h3>
+        <p className="text-lightDark mt-2 font-normal">{description}</p>
       </div>
     </>
   );

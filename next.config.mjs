@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+
+import { withContentlayer } from 'next-contentlayer';
+
 const nextConfig = {
   images: {
-    domains: ["picsum.photos"], // Add any other domains you plan to use here
+    domains: ['picsum.photos'], // Add any other domains you plan to use here
   },
 };
 
-export default nextConfig;
+export default withContentlayer(nextConfig);

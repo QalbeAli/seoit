@@ -27,16 +27,16 @@ const PricingCard: React.FC = () => {
     <section className="flex flex-col items-center justify-center pt-4 bg-gray-50">
       <div className="mb-8 flex items-center w-full max-w-md p-4">
         <button
-          className={`flex-1 px-4 py-2 sm:px-6 sm:py-3.5 text-xs sm:text-sm md:text-base rounded-l-full text-blue-400 ${
-            isMonthly ? "bg-blue-600 text-white" : "bg-gray-200"
+          className={`flex-1 px-4 py-2 sm:px-6 sm:py-3.5 text-xs sm:text-sm md:text-base rounded-l-full text-black ${
+            isMonthly ? "bg-[#d6fc5b] text-black" : "bg-gray-200"
           }`}
           onClick={() => setIsMonthly(true)}
         >
           Monthly
         </button>
         <button
-          className={`flex-1 px-4 py-2 sm:px-6 sm:py-3.5 text-xs sm:text-sm md:text-base text-blue-400 rounded-r-full ${
-            !isMonthly ? "bg-blue-600 text-white" : "bg-gray-200"
+          className={`flex-1 px-4 py-2 sm:px-6 sm:py-3.5 text-xs sm:text-sm md:text-base text-black rounded-r-full ${
+            !isMonthly ? "bg-[#d6fc5b] text-black" : "bg-gray-200"
           }`}
           onClick={() => setIsMonthly(false)}
         >
@@ -49,7 +49,7 @@ const PricingCard: React.FC = () => {
         <div className="p-8 bg-white rounded-lg shadow-lg flex flex-col w-full sm:w-80 md:w-64 lg:w-80">
           <div className="flex space-x-4">
             <div className="flex justify-center items-center ">
-              <LuSquareDot className="w-16 h-16 text-gray-400 bg-gray-300 rounded-lg " />
+              <LuSquareDot className="w-16 h-16 text-black bg-greenTouch rounded-lg " />
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-gray-700">Starter</h3>
@@ -86,7 +86,7 @@ const PricingCard: React.FC = () => {
             onClick={() => {
               getCheckout("Starter", isMonthly ? 29 : 261);
             }}
-            className="px-6 py-3 mt-auto  w-full text-white bg-blue-500 rounded-full"
+            className="px-6 py-3 mt-auto  w-full text-black bg-[#d6fc5b] rounded-full"
           >
             Choose Starter
           </button>
@@ -96,7 +96,7 @@ const PricingCard: React.FC = () => {
         <div className="p-8 bg-gray-800 rounded-lg shadow-lg flex flex-col w-full sm:w-80 md:w-64 lg:w-80 text-white">
           <div className="flex space-x-4">
             <div className="flex justify-center items-center ">
-              <LuSquareDot className="w-16 h-16 text-white bg-orange-600 rounded-lg " />
+              <LuSquareDot className="w-16 h-16 text-black bg-greenTouch rounded-lg " />
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-white">Starter</h3>
@@ -150,7 +150,7 @@ const PricingCard: React.FC = () => {
         <div className="p-8 bg-white rounded-lg shadow-lg flex flex-col w-full sm:w-80 md:w-64 lg:w-80">
           <div className="flex space-x-4">
             <div className="flex justify-center items-center ">
-              <LuSquareDot className="w-16 h-16 text-gray-400 bg-gray-300 rounded-lg " />
+              <LuSquareDot className="w-16 h-16 text-black bg-greenTouch rounded-lg " />
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-gray-700">Starter</h3>
@@ -186,7 +186,7 @@ const PricingCard: React.FC = () => {
             onClick={() => {
               getCheckout("Organization", isMonthly ? 99 : 891);
             }}
-            className="px-6 py-3 mt-auto w-full text-white bg-blue-500 rounded-full"
+            className="px-6 py-3 mt-auto w-full text-black bg-[#d6fc5b] rounded-full"
           >
             Choose Organization
           </button>

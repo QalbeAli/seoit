@@ -9,6 +9,8 @@ const MarketingService = () => {
         <video
             src="/video2.mp4" // Ensure this path is correct
             controls
+            autoPlay
+            muted
             className="rounded-xl w-full h-auto object-cover"
           />
         </div>
@@ -18,7 +20,7 @@ const MarketingService = () => {
           </h4>
           <h2 className="text-3xl font-bold text-center lg:text-left text-gray-900 mt-2">
             Best Marketing Service for <br />{" "}
-            <span className="text-blue-600">Technological Era</span>
+            <span className="text-[#c9f242]">Technological Era</span>
           </h2>
           <p className="mt-4 text-gray-600 text-center lg:text-left">
             Target your audience based on their interests. Lorem ipsum dolor sit
@@ -26,7 +28,7 @@ const MarketingService = () => {
           </p>
           <div className="mt-8">
             <div className="flex items-center mb-4">
-              <FaChartLine className="w-10 h-10 bg-orange-100 rounded-md p-1 text-orange-500" />
+              <FaChartLine className="w-10 h-10 bg-greenTouch rounded-md p-1 text-lime-300" />
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-gray-900">
                   Automatic interest detection

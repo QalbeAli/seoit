@@ -5,11 +5,11 @@ const MoreService = () => {
     <>
       <div className="flex justify-center items-center flex-col">
         <div className="text-center space-y-8">
-          <div className="font-bold text-3xl text-[#2D3748]">More About Our Services</div>
-          <div className="text-[#718096]">
+          <div className="font-bold text-3xl text-sil">More About Our Services</div>
+          <div className="text-lightDark">
             Consectetur adipisicing elit, sed do eiusmod tempor incididunt.
           </div>
-          <div className="text-[#718096]">
+          <div className="text-lightDark">
             Consectetur sed do eiusmod tempor incididunt adipisicing eiusmod.
           </div>
         </div>

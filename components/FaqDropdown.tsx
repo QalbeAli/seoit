@@ -64,11 +64,11 @@ const FaqDropdown = () => {
     <>
       <div className="my-20 mx-3">
         <div className="flex justify-center items-center flex-col space-y-6">
-          <div className="text-[#F97316] font-bold text-xl">We Are Here To Help You</div>
-          <div className="text-[#2D3748] text-center font-bold text-4xl">Frequently Asked Questions</div>
-          <div className="text-[#718096] font-normal text-center text-xl">We help startups, corporations and nonprofits.</div>
+          <div className="text-sil font-bold text-xl">We Are Here To Help You</div>
+          <div className="text-dark text-center font-bold text-4xl">Frequently Asked Questions</div>
+          <div className="text-lightDark font-normal text-center text-xl">We help startups, corporations and nonprofits.</div>
         </div>
-        <div className="my-20">
+        <div className="my-20 text-lightDark"> 
           {faqs.map((faq, index) => (
             <FaqItem key={index} question={faq.question} answer={faq.answer} />
           ))}

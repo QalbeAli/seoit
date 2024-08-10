@@ -10,10 +10,10 @@ const ServiceCard: FC<ServiceCardProps> = ({ icon, title, description }) => {
   return (
     
     <div className="flex items-start space-x-4 p-4">
-      <div className="flex-shrink-0">{icon}</div>
+      <div className="flex-shrink-0 t">{icon}</div>
       <div>
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <h3 className="text-lg  font-semibold">{title}</h3>
+        <p className="text-lightDark">{description}</p>
       </div>
     </div>
   );

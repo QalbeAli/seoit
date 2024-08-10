@@ -18,29 +18,29 @@ const BusinessServices = () => {
         <div className="md:w-1/2 p-6 flex flex-col justify-center">
           <div className="mb-4">
             <h2 className="text-2xl font-bold mb-2">Business Analysis</h2>
-            <p className="text-gray-600">
+            <p className="text-lightDark">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
             </p>
           </div>
           <div className="mb-4">
             <h2 className="text-2xl font-bold mb-2">Consulting & Marketing</h2>
-            <p className="text-gray-600">
+            <p className="text-lightDark">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
             </p>
           </div>
           <div className="mb-4">
             <h2 className="text-2xl font-bold mb-2">Strategic Planning</h2>
-            <p className="text-gray-600">
+            <p className="text-lightDark">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
             </p>
           </div>
           <div className="mb-4">
             <h2 className="text-2xl font-bold mb-2">Design & Development</h2>
-            <p className="text-gray-600">
+            <p className="text-lightDark">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
             </p>
           </div>
-          <button className="bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600">
+          <button className="bg-[#d6fc5b] text-black py-2 px-4 rounded-lg hover:bg-lime-200">
             Schedule a Consultation
           </button>
         </div>

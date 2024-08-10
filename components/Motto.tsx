@@ -5,10 +5,10 @@ const Motto = () => {
     <>
       <div className="container mx-auto flex flex-col md:flex-row justify-center items-center my-20 space-y-6 md:space-y-0 md:space-x-20 leading-6 mb-40 text-center md:text-left">
         <div className="space-y-6">
-          <div className="font-bold text-3xl text-[#2D3748]">Our Motto</div>
-          <div className="text-[#718096]">Lorem ipsum dolor sit amet <br className="hidden md:block" /> pri cu etiam iudicabit.</div>
+          <div className="font-bold text-3xl text-sil">Our Motto</div>
+          <div className="text-lightDark">Lorem ipsum dolor sit amet <br className="hidden md:block" /> pri cu etiam iudicabit.</div>
         </div>
-        <p className="text-[#718096] mt-2 max-w-lg">
+        <p className="text-lightDark mt-2 max-w-lg">
           Docendi deleniti eos ad. His enim tractatos ea, evertitur <br className="hidden md:block" /> dissentiunt
           nec ut, Mel tota quidam senserit et ut tritani <br className="hidden md:block" /> platonem est. In a
           professional context it often happens that <br className="hidden md:block" /> private or corporate

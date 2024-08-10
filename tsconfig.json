@@ -18,7 +18,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "contentlayer/generated": ["./.contentlayer/generated"],
     }
   },
   "include": [
@@ -27,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/api/stipe-payment-intern/route.js"
-  ],
+, "app/blogs/[slug]/BlogSection.js", "app/blogs/[slug]/page.jsx", "components/ScrollBarProgress.jsx", "components/ReviewCard.tsx", "components/ReviewPage.jsx", "tailwind.config.js"  ],
   "exclude": ["node_modules"]
 }

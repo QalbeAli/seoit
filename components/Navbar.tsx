@@ -15,11 +15,15 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   const isActiveLink = (path: string) => pathname === path;
 
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 dark:bg-[#35383d]">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
           <Link
             href="/"
@@ -32,7 +36,7 @@ const Navbar = () => {
               width={64} // Adjust width
               height={64} // Adjust height
             />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">
               SEOIT
             </span>
           </Link>
@@ -66,7 +70,7 @@ const Navbar = () => {
             } w-full md:block md:w-auto`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-6 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium flex flex-col p-6 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-[#35383d] dark:border-gray-700">
               <li>
                 <Link
                   href="/"
@@ -76,6 +80,7 @@ const Navbar = () => {
                       : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   }`}
                   aria-current="page"
+                  onClick={closeMenu} // Close the menu when this link is clicked
                 >
                   Home
                 </Link>
@@ -88,6 +93,7 @@ const Navbar = () => {
                       ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
                       : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   }`}
+                  onClick={closeMenu} // Close the menu when this link is clicked
                 >
                   About
                 </Link>
@@ -100,6 +106,7 @@ const Navbar = () => {
                       ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
                       : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   }`}
+                  onClick={closeMenu} // Close the menu when this link is clicked
                 >
                   Services
                 </Link>
@@ -112,15 +119,45 @@ const Navbar = () => {
                       ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
                       : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   }`}
+                  onClick={closeMenu} // Close the menu when this link is clicked
                 >
                   Pricing
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/blogs"
+                  className={`block py-2 px-3 rounded md:p-0 ${
+                    isActiveLink("/blogs")
+                      ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
+                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  }`}
+                  onClick={closeMenu} // Close the menu when this link is clicked
+                >
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/reviews"
+                  className={`block py-2 px-3 rounded md:p-0 ${
+                    isActiveLink("/blogs")
+                      ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
+                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  }`}
+                  onClick={closeMenu} // Close the menu when this link is clicked
+                >
+                  Reviews
+                </Link>
+              </li>
+              <li>
                 <div className="">
                   <button
-                    className="text-black bg-[#C3FF00] px-4 py-1 rounded-xl hover:scale-110"
-                    onClick={() => setIsModalOpen(true)}
+                    className="text-black bg-[#d6fc5b] px-4 py-1 rounded-xl hover:scale-110"
+                    onClick={() => {
+                      closeMenu(); // Close the menu when this button is clicked
+                      setIsModalOpen(true);
+                    }}
                   >
                     Contact Us
                   </button>

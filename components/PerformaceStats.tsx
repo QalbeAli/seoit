@@ -12,19 +12,19 @@ const HighImpactResults = () => {
           </h2>
           <div className="mt-8 sm:mt-12 space-y-6 sm:space-y-0 sm:space-x-12 flex flex-col sm:flex-row justify-center sm:justify-between">
             <div className="flex flex-col items-center">
-              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-500">450</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3a3a3a]">450</span>
               <p className="text-gray-600 mt-2 text-sm sm:text-base">Leads Generated</p>
             </div>
             <div className="flex flex-col items-center mt-8 sm:mt-0">
-              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-500">500</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3a3a3a]">500</span>
               <p className="text-gray-600 mt-2 text-sm sm:text-base">Marketing Campaigns</p>
             </div>
             <div className="flex flex-col items-center mt-8 sm:mt-0">
-              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-500">200</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3a3a3a]">200</span>
               <p className="text-gray-600 mt-2 text-sm sm:text-base">Successful Clients</p>
             </div>
             <div className="flex flex-col items-center mt-8 sm:mt-0">
-              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-500">100</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3a3a3a]">100</span>
               <p className="text-gray-600 mt-2 text-sm sm:text-base">Social Media</p>
             </div>
           </div>

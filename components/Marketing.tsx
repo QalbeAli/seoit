@@ -32,7 +32,7 @@ const Marketing = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {services.map((service, index) => (
             <div key={index} className=" p-2 rounded-lg  flex flex-col items-center">
-              <div className="mb-4 p-4 rounded-full bg-[#C3FF00]">
+              <div className="mb-4 p-4 rounded-full bg-[#d6fc5b]">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-[#718096]">{service.title}</h3>

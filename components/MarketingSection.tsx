@@ -36,6 +36,8 @@ const MarketingSection = () => {
           <video
               src="/video1.mp4" // Update the path to your video
               controls
+              autoPlay
+              muted
               className="rounded-lg shadow-lg w-full h-full object-cover"
             />
           </div>

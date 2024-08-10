@@ -10,25 +10,25 @@ import ServiceCard from "./ServiceCard";
 const ServicesGrid: FC = () => {
   const services = [
     {
-      icon: <PhoneIcon className="h-10 w-10 text-gray-500" />,
+      icon: <PhoneIcon className="h-10 w-10 text-sil" />,
       title: "Marketing solutions for IT business",
       description:
         "As an Internet marketing strategy, SEO considers how search engines work, the computer-programmed algorithms that dictate search engine behavior.",
     },
     {
-      icon: <ClipboardListIcon className="h-10 w-10 text-gray-500" />,
+      icon: <ClipboardListIcon className="h-10 w-10 text-sil" />,
       title: "Application design & development",
       description:
         "Social media marketing is the use of social media platforms and websites to promote a product or service and is becoming more popular.",
     },
     {
-      icon: <MailIcon className="h-10 w-10 text-gray-500" />,
+      icon: <MailIcon className="h-10 w-10 text-sil" />,
       title: "Customer experience strategy",
       description:
         "Content marketing is a form of marketing focused on creating, publishing, and distributing content for a targeted audience online.",
     },
     {
-      icon: <ShieldCheckIcon className="h-10 w-10 text-gray-500" />,
+      icon: <ShieldCheckIcon className="h-10 w-10 text-sil" />,
       title: "Branding & marketing solutions",
       description:
         "Social media marketing is the use of social media platforms and websites to promote a product or service and is becoming more popular.",

@@ -30,7 +30,7 @@ const CustomerReview: React.FC<CustomerReviewProps> = ({
             />
           </div>
           <div className="text-center md:text-left">
-            <h3 className=" font-bold mb-10 text-blue-500 text-2xl ">
+            <h3 className=" font-bold mb-10 text-sil text-2xl ">
               Customer Story
             </h3>
             <p className="text-2xl font-semibold mb-10">

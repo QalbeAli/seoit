@@ -6,7 +6,7 @@ const Testimonials = () => {
     <div className="bg-gray-100 p-8">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center">
-          <h1 className="text-4xl font-bold">OUR CLIENT SAY</h1>
+          <h1 className="text-4xl text-sil font-bold">OUR CLIENT SAY</h1>
           <p className="text-gray-600 mt-2">
             Creative Fuels Design Fuels Creativity, Be Here For More, Are You In Love with A Creative?
           </p>

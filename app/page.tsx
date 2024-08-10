@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import AcquisitionComponent from "@/components/AcquisitionComponent";
 import Brand from "@/components/Brand";
 import CallToAction from "@/components/CallToAction";
@@ -14,27 +14,26 @@ import MarketingService from "@/components/MarketingService";
 import PerformanceStats from "@/components/PerformaceStats";
 import OurProjects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
+import FolderIcon from "@/components/FolderIcon";
 
 export default function Home() {
   return (
     <>
-    <div className="bg-white">
-      {/* <AcquisitionComponent /> */}
-      {/* <Hero /> */}
-      <MainHero />
-      <CompanyLogos />
-      <Brand />
-      <MarketingSection />
-      <MarketingService />
-      <Competition />
-      <LeadGeneration />
-      <PerformanceStats />
-      <Marketing />
-      <CallToAction />
-      <OurProjects />
-      <InTouch />
-      <Testimonials />
-    </div>
+      <div className="bg-white">
+        <MainHero />
+        <CompanyLogos />
+        <Brand />
+        <MarketingSection />
+        <MarketingService />
+        <Competition />
+        <LeadGeneration />
+        <PerformanceStats />
+        <Marketing />
+        <CallToAction />
+        <OurProjects />
+        <InTouch />
+        <Testimonials />
+      </div>
     </>
   );
 }

@@ -42,15 +42,15 @@ const Reviews: React.FC = () => {
       <CustomerReview {...reviews[currentIndex]} />
       <div className="flex space-x-2 mt-4">
         <button
-          className={` ${currentIndex === 0 ? 'text-blue-500' : 'text-gray-300'}`}
+          className={` ${currentIndex === 0 ? 'text-lime-400' : 'text-gray-300'}`}
           onClick={() => setCurrentIndex(0)}
         ><FaDotCircle/></button>
          <button
-          className={` ${currentIndex === 1 ? 'text-blue-500' : 'text-gray-300'}`}
+          className={` ${currentIndex === 1 ? 'text-lime-400' : 'text-gray-300'}`}
           onClick={() => setCurrentIndex(1)}
         ><FaDotCircle/></button>
        <button
-          className={` ${currentIndex === 2 ? 'text-blue-500' : 'text-gray-300'}`}
+          className={` ${currentIndex === 2 ? 'text-lime-400' : 'text-gray-300'}`}
           onClick={() => setCurrentIndex(2)}
         ><FaDotCircle/></button>
       </div>
