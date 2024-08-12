@@ -24,7 +24,7 @@ const OurProjects = () => {
     <div className="p-8 bg-white">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center">
-          <h1 className="text-4xl text-sil font-bold">OUR PROJECTS</h1>
+          <h1 className="text-4xl text-dark font-bold">OUR PROJECTS</h1>
           <p className="text-gray-600 mt-2">
             Every One Of Us Loves Something Different. So, Explore The World Through The Lens Of Our Visual Capabilities And Find What You Love.
           </p>

@@ -19,7 +19,7 @@ const Competition = () => {
               <div className=" border-b sm:border-b-0 sm:border-r border-gray-200 pb-6 sm:pb-0 sm:pr-6">
                 <div className="flex items-center space-x-3 ">
                   <div className="  bg-[#d6fc5b] rounded-md text-[#a8a3a8] ">
-                    <FaChartPie className="w-12 h-12 p-1 " />
+                    <FaChartPie className="w-12 h-12 p-1 text-black " />
                   </div>
                   <h3 className="text-lg font-semibold text-[#718096]">
                     Advanced Analytics
@@ -35,7 +35,7 @@ const Competition = () => {
               <div className="  border-gray-200 pb-6 sm:pb-0 sm:pr-6">
                 <div className="flex items-center space-x-3 ">
                   <div className="  bg-[#d6fc5b] rounded-md text-[#a8a3a8]">
-                    <FaHeadset className="w-12 h-12 p-1 " />
+                    <FaHeadset className="w-12 h-12 p-1 text-black " />
                   </div>
                   <h3 className="text-lg font-semibold text-[#718096]">
                   Lifetime Access
@@ -53,7 +53,7 @@ const Competition = () => {
                 <div className="  border-gray-200 pb-6 sm:pb-0 sm:pr-6">
                   <div className="flex items-center space-x-3 ">
                     <div className="  bg-[#d6fc5b] rounded-md text-[#a8a3a8]">
-                      <FaInfinity className="w-12 h-12 p-1 " />
+                      <FaInfinity className="w-12 h-12 p-1 text-black " />
                     </div>
                     <h3 className="text-lg font-semibold text-[#718096]">
                     Expert Support
@@ -71,7 +71,7 @@ const Competition = () => {
                 <div className="  border-gray-200 pb-6 sm:pb-0 sm:pr-6">
                   <div className="flex items-center space-x-3 ">
                     <div className="  bg-[#d6fc5b] rounded-md text-[#a8a3a8]">
-                      <FaLightbulb className="w-12 h-12 p-1 " />
+                      <FaLightbulb className="w-12 h-12 p-1 text-black " />
                     </div>
                     <h3 className="text-lg font-semibold text-[#718096]">
                     Creative Solutions

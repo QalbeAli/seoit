@@ -1,9 +1,9 @@
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
-import { LampContainer } from "./LampContainer";
-import { motion } from "framer-motion";
-import { BackgroundBeams } from "./BackgroundBeams";
+import { useSpring, animated } from 'react-spring';
+import { motion } from 'framer-motion';
 const MainHero = () => {
+  
   const images = [
     {
       src: "https://picsum.photos/300/200?random=1",
@@ -117,7 +117,6 @@ const MainHero = () => {
           <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-black to-transparent z-10"></div>
         </div>
       </div>
-      <BackgroundBeams />
     </div>
   );
 };

@@ -15,12 +15,17 @@ import PerformanceStats from "@/components/PerformaceStats";
 import OurProjects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import FolderIcon from "@/components/FolderIcon";
-
+import { HeroParallax } from "@/components/HeroParallax";
+import {products} from "@/utils/products"
+import { ProjectCardsCarousel } from "@/components/ProjectCardsCarousel";
+import { FollowingPointer } from "@/components/FollowingPointer";
+import { GlobeWorking } from "@/components/GlobeWorking";
 export default function Home() {
   return (
     <>
       <div className="bg-white">
-        <MainHero />
+        <HeroParallax products={products} />
+        {/* <MainHero /> */}
         <CompanyLogos />
         <Brand />
         <MarketingSection />
@@ -30,10 +35,12 @@ export default function Home() {
         <PerformanceStats />
         <Marketing />
         <CallToAction />
-        <OurProjects />
+        <ProjectCardsCarousel />
+        {/* <OurProjects /> */}
         <InTouch />
         <Testimonials />
       </div>
     </>
   );
 }
+

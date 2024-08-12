@@ -1,15 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import HeroImage from "@/public/hero.webp";
+import { Cover } from "@/components/SparkleCover";
 const AboutStory = () => {
   return (
     <>
       <div className="flex justify-center items-center flex-col">
-        <div className="font-bold text-lightDark text-xl my-8">
-          Established in 2017
-        </div>
-        <div className="text-4xl font-bold text-sil">
-          Discover Our Story
+        <div>
+          <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+            Discover Our Story <br /> <Cover>Established in 2017</Cover>
+          </h1>
         </div>
         <div className="font-normal text-center text-xl my-8 text-lightDark">
           Credibly brand standards compliant users without extensible services

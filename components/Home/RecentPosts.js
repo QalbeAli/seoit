@@ -2,6 +2,7 @@ import { sortBlogs } from "@/utils";
 import Link from "next/link";
 import React from "react";
 import BlogLayoutThree from "../Blog/BlogLayoutThree";
+import { FollowingPointer } from "../FollowingPointer";
 
 const RecentPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
@@ -17,8 +18,9 @@ const RecentPosts = ({ blogs }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-16">
         {sortedBlogs.slice(4, 10).map((blog, index) => {
           return (
-            <article key={index} className="col-span-1 row-span-1 relative">
-              <BlogLayoutThree blog={blog} />
+            <article key={index} className="col-span-1 row-span-1 relative ">
+              <FollowingPointer blog={blog} />
+              {/* <BlogLayoutThree blog={blog} /> */}
             </article>
           );
         })}

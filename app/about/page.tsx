@@ -3,6 +3,7 @@ import CardGrid from '@/components/CardGrid'
 import MoreService from '@/components/MoreService'
 import Motto from '@/components/Motto'
 import ProfileGrid from '@/components/ProfileGrid'
+import { SparklesCore } from '@/components/Sparkles'
 import Team from '@/components/Team'
 import React from 'react'
 

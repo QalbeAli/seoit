@@ -4,14 +4,13 @@ import Clients from "@/components/Clients";
 import CompanyLogoService from "@/components/CompanyLogoService";
 import Service from "@/components/Service";
 import ServicesGrid from "@/components/ServiceGrid";
+import { ServiceHeroAnimation } from "@/components/ServiceHeroAnimation";
 import React from "react";
 
 const Services = () => {
   return (
     <>
-
-      <Service />
-      <BusinessServices />
+      <ServiceHeroAnimation />
       <ServicesGrid />
       <Clients />
       <CompanyLogoService />

@@ -1,27 +1,34 @@
 import React from "react";
 import Image from "next/image";
+import { GlobeWorking } from "./GlobeWorking";
+import { ShootingStars } from "./ShootingStars";
+import { StarsBackground } from "./StarsBackground";
 
 const Footer = () => {
   return (
     <>
-      <footer className="bg-white dark:bg-lightDark">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div className="md:flex md:justify-between">
-            <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center">
+      <footer className="bg-lightDark">
+        <div className="mx-auto max-w-7xl p-4 py-6 lg:py-8">
+          <div>
+            <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center py-4">
                 <Image
                   src="/logo.png"
-                  className="h-16 me-6 filter invert "
+                  className="h-16  "
                   alt="SEOIT Logo"
-                  width={64} // Adjust the width as needed
-                  height={64} // Adjust the height as needed
-                  
+                  width={96} // Adjust the width as needed
+                  height={96} // Adjust the height as needed
                 />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+
+                <span className=" text-4xl font-semibold whitespace-nowrap dark:text-white">
                   SEOIT
                 </span>
-              </a>
+              </div>
+              <div className="w-full max-w-7xl">
+                <GlobeWorking />
+              </div>
             </div>
+            {/* Below Is Right Section */}
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">

@@ -32,9 +32,9 @@ const Navbar = () => {
             <Image
               src="/logo.png"
               alt="SEOIT Logo"
-              className="h-16 w-16 filter invert" // Adjust size here
-              width={64} // Adjust width
-              height={64} // Adjust height
+              className="h-16 w-16  " // Adjust size here
+              width={96} // Adjust width
+              height={96} // Adjust height
             />
             <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">
               SEOIT
@@ -141,7 +141,7 @@ const Navbar = () => {
                 <Link
                   href="/reviews"
                   className={`block py-2 px-3 rounded md:p-0 ${
-                    isActiveLink("/blogs")
+                    isActiveLink("/reviews")
                       ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
                       : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   }`}
